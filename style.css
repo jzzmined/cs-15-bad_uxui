@@ -1,0 +1,13 @@
+/* SHARED STYLES (all levels) — level-specific files: level1.css ... level6.css */
+*{box-sizing:border-box}
+body{margin:0;padding:8px;min-height:100vh;font-family:'Comic Sans MS',cursive;overflow-x:hidden}
+#bar{font-family:Impact;font-size:13px;background:#000;color:#0f0;padding:4px;margin-bottom:8px}
+h1{font-size:clamp(20px,5vw,42px);margin:4px 0;text-shadow:3px 3px red}
+button{cursor:pointer;border:4px ridge #888;padding:8px 14px}
+#msg{font-size:22px;min-height:34px;background:#000;color:#f00;padding:6px;margin:8px 0}
+.abs{position:absolute}
+/* pop-ups (used in levels 4 and 5) */
+.pop{position:fixed;z-index:50;width:min(280px,80vw);border:6px double red;padding:8px;text-align:center;box-shadow:8px 8px #000;color:#000;font-weight:bold}
+.pop img{width:100%;max-height:170px;object-fit:cover;border:3px solid #000}
+.pop .x{position:absolute;font-size:8px;padding:0 3px;border-width:1px}
+.pop .ok{font-size:15px;background:lime}
