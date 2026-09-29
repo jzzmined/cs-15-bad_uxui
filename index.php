@@ -1,5 +1,4 @@
 <?php
-// THE WORST WEBSITE EVER — run with: php -S localhost:8000  (inside this folder)
 session_start();
 if (isset($_GET['reset'])) { session_destroy(); header('Location: index.php'); exit; }
 $_SESSION += ['level' => 1, 'att' => 0, 'name' => 'Anonymous Survivor', 't3' => 0];
@@ -59,9 +58,9 @@ function ugly($fonts) {
 ?><!DOCTYPE html>
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>THE WORST WEBSITE EVER</title>
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/level<?= $level ?>.css"></head>
+<title>Two Sister and a System-BAD UX/UI</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="level<?= $level ?>.css"></head>
 <body class="l<?= $level ?>">
 <div id="bar">LEVEL <?= min($level, 5) ?>/5 — <?= $moods[$level] ?> | ATTEMPTS: <b id="att"><?= $att ?></b> | SANITY: <b id="san"><?= $sanity ?></b>%</div>
 <h1>THE WORST WEBSITE EVER</h1>
