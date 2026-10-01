@@ -166,7 +166,7 @@ function pop(text,img){
 }
 const imgOrNull=()=>IMGS.length&&document.body.classList.contains('l5')?pick(IMGS):null;
 const POPS=document.body.classList.contains('l5')?
- ["BRO WHAT ARE YOU DOING 😭","YOUR PERFORMANCE HAS BEEN RECORDED.","THE GROUP CHAT WILL HEAR ABOUT THIS.","SKILL ISSUE DETECTED 🚨","This is going in the yearbook.","Screenshot taken. Sent to everyone.","Your mouse has been detected."]:
+ ["walang kanin buseng","ala wa balo","tarantadooo","pwede nang mangawat","maiipit ka nganiii","merong bang left sa right"]:
  ["Your mouse has been detected.","You are currently using a website.","Your screen is on. Congratulations.","Please confirm you are a human (you look unsure).","Your cursor is 3 pixels too far left.","Cookies detected. They're not yours.","Breaking: you clicked something.","Update available for your patience.","You have 0 new notifications. Panic."];
 </script>
 
