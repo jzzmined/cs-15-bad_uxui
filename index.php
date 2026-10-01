@@ -14,7 +14,7 @@ if (isset($_GET['complete']) && (int)$_GET['complete'] === $_SESSION['level'] &&
 $level = $_SESSION['level'];
 $moods = [1 => '😐 Weird', 2 => '😭 Annoying', 3 => '😡 Frustrating', 4 => '🤯 Chaotic', 5 => '💀 ABSOLUTE DISASTER', 6 => '🏆 Survivor'];
 $imgs = [];
-foreach (glob(__DIR__ . '/images/*.{jpg,jpeg,png,gif,webp,svg}', GLOB_BRACE) as $f) $imgs[] = 'images/' . basename($f);
+foreach (glob(__DIR__ . '/images/*.{jpg,jpeg,png,gif,webp,svg}', GLOB_BRACE) as $f) $imgs[] = 'images/' . rawurlencode(basename($f));
 
 // ---------- LEVEL 3: FORM FROM HELL ----------
 $errors = []; $v = ['name' => '', 'age' => '', 'email' => '', 'pw' => ''];
@@ -59,8 +59,7 @@ function ugly($fonts) {
 <html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Two Sister and a System-BAD UX/UI</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="level<?= $level ?>.css"></head>
+<link rel="stylesheet" href="style.css"></head>
 <body class="l<?= $level ?>">
 <div id="bar">LEVEL <?= min($level, 5) ?>/5 — <?= $moods[$level] ?> | ATTEMPTS: <b id="att"><?= $att ?></b> | SANITY: <b id="san"><?= $sanity ?></b>%</div>
 <h1>THE WORST WEBSITE EVER</h1>
